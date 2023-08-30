@@ -18,13 +18,13 @@ const catalogo = [
 for(const produtoCatalogo of catalogo){
 
 // const lista = ["info", "info1", "info2"]
-const cartaoProduto = `<div id="card-produto1">
+const cartaoProduto = `<div class="border-solid border2 border-sky-500" id="card-produto-${produtoCatalogo.id}">
 <img 
     src="./assets/img/${produtoCatalogo.nomeArquivoImagem}" alt="Teclado"
     style="height: 200px"
 />
 <p>${produtoCatalogo.nome}</p>
-<p>${produtoCatalogo.marca}</p>
+<p class="marca">${produtoCatalogo.marca}</p>
 <p>$${produtoCatalogo.preco}</p>
 <button>Adicionar</button>
 </div>`;
